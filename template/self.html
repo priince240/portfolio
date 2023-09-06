@@ -1,0 +1,674 @@
+{%load static%}
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+      ">
+        <style>
+
+            .maindiv{
+                display: flex;
+                margin: auto;
+                width: 1400px;
+            }
+            .title{
+                padding-top:10px ;
+                flex-direction: row;
+                background-color: rgb(0, 0, 0,0.5);
+                width: 250px;
+                height: 970px;
+                display: flex;
+                border-radius: 20px;
+                position: fixed;
+                border:3px solid #fff;
+                margin-right: 100px;
+            }
+            .list{
+                list-style: none;
+                padding:10px;
+                flex-direction: column;
+                padding-top: 60px;
+                padding-left: 20px;
+                
+            }
+            .list li{
+               
+                color : white;
+                font-size: 40px;
+                margin-top: 15px;
+                
+            }
+            .list li a{
+                text-decoration:none ;
+                color:#fff
+            }
+            .detail{
+                flex-direction: row;
+                background-color: rgb(128, 128, 128,0.5);
+                border-right: 5px solid rgb(247, 242, 242);
+                width: 1100px;
+                height: auto;
+                border-bottom: #f7f3f3;
+                padding-left: 20px;
+                padding-top: 10px;
+                margin-left: 270px; 
+                border-radius: 20px;
+            }
+            .font{
+                padding: 15px;
+                font-size: 30px;
+                font-family: cursive;
+                color: black;
+            }
+            .formdiv{
+                margin-left: -120px;
+            }
+            .image{
+                width: 200px;
+                height: 200px;
+                border-radius: 120px;
+                margin-left: 10px;
+                margin-top: 150px;
+                              
+            }
+            .top1{
+                background-color: black;
+                border-radius: 20px;
+                color: #fff;
+                width:250px;
+                font-size: 35px;
+                margin: auto;
+                outline:8px double #fff;
+                margin-bottom: 10px;
+            }
+            .top{
+                background-color: black;
+                border-radius: 20px;
+                color: #fff;
+                width:200px;
+                font-size: 35px;
+                margin: auto;
+                margin-top: 15px;
+                outline:8px double #fff;
+                margin-bottom: 10px;
+            }
+            .experience{
+                font-size: 39px;
+                font-weight: bolder;
+                font-style: italic;
+                color: #fff;
+            }
+            .form{
+                margin: auto;
+                width:530px;
+                padding-top: 20px;
+                
+                padding-left: 30px;
+               
+            }
+            .input{
+                width: 300px;
+                height: 30px;
+                background: transparent;
+                border: 3px solid #fff;
+                border-radius: 10px;  
+                color: #fff;              
+               
+            }
+            .button{
+                margin-left: -250px;
+              
+            }
+            .logo{
+                width: 100px;
+                height:100px ;
+                filter: drop-shadow(2px 3px 4px black);
+            }
+            .logo_div{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .logo_subdiv{
+                flex-direction: row;
+                margin-left: 10px;
+            }
+            .video_div{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+            .video_subdiv{
+                flex-direction: row;
+                margin-left: 20px;
+                margin-top: 15px;
+               
+            }
+            .personal_div{
+                display:flex;
+            }
+            .personal_subdiv{
+                flex-direction: row;
+                padding: 3px;
+                width: 550px;
+                margin-top: 50px;
+                padding-bottom: 10px;
+                
+            }
+            .logo2{
+                margin-top: 90px;
+                animation: log 1s ease-in infinite;
+            }
+            @keyframes log{
+                0% ,100%{
+                    filter: drop-shadow(10px 10px 5px white);
+                }
+                50%{
+                    filter: drop-shadow(10px 10px 5px grey);
+                }
+            }
+            .contact{
+               
+                flex-direction: row;
+                margin-top: 50px;
+                width: 550px;
+                margin-left: 120px;
+                padding-bottom: 10px;
+            }
+            .expcontact{
+               
+                flex-direction: row;
+                margin-top: 50px;
+                width: 550px;
+                margin-left: -10px;
+                
+            }
+            .suggestion{
+                flex-direction:row;
+                width:550px;
+                margin-top: 100px;
+                
+            }
+            .youtube{
+                width: 200px;
+                height: 200px;
+            }
+            .last_head{
+                font-size: 27px;
+                font-family: cursive;
+                font-weight: bolder;
+                list-style-type: disc;
+                color: #fff;
+            }
+            .last{
+                background-color: black;
+                border-radius: 20px;
+                color: #fff;
+                width:400px;
+                font-size: 35px;
+                margin: auto;
+                margin-top: 15px;
+                outline:8px double #fff;
+                margin-bottom: 10px;
+            }
+            
+            @media only screen and (max-width:700px)and (min-width:200px){
+               
+                .maindiv{
+                    display: flex;
+                    
+                }
+                .title{
+                    flex-direction: column;
+                    background-color: black;
+                    width: 600px;
+                    height: 40px;
+
+                    margin-top: -3%;
+                   
+                   
+                }
+                .list{
+                    display: flex;
+                    list-style: none;
+                    flex-direction: row;
+                    margin-top: -10%;
+                    
+                  
+                  
+                }
+                .list li{
+                    flex-direction: row;
+                    color : white;
+                    font-size: 20px;
+                    margin-left: 9px;
+                   
+                   
+
+                }
+                .list li a{
+                    text-decoration:none ;
+                    color:#fff;
+                    
+                }
+                .list li a:hover{
+                    text-decoration:none ;
+                    background-image: linear-gradient(white,black);
+                    color:rgb(253, 253, 253);
+                    border-radius: 5px;
+                    
+                }
+                .detail{
+                    flex-direction: column;
+                    background-color: rgb(0, 255, 255,0.5);
+                    border-right: 5px solid black;
+                    width:600px;
+                    height: auto;
+            
+                }
+
+                .font{
+                    padding: 15px;
+                    font-size: 20px;
+                    font-family: cursive;
+                    color: black;
+                }
+                .image{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 120px;
+                   
+                
+                                  
+                }
+                .top1{
+                    background-color: black;
+                    border-radius: 20px;
+                    color: #fff;
+                    width:270px;
+                    font-size: 35px;
+                    margin: auto;
+                    outline:8px double #fff;
+                    margin-top: 50px;
+                }
+                .top{
+                    margin-top: 50px;
+                    background-color: black;
+                    border-radius: 20px;
+                    color: #fff;
+                    width:250px;
+                    font-size: 35px;
+                    margin: auto;
+                    margin-top: 15px;
+                    outline:8px double #fff;
+                }
+                .experience{
+                    font-size: 25px;
+                    font-weight: bolder;
+                    font-style: italic;
+                    color: black;
+                }
+                .expcontact{
+               
+                    flex-direction: row;
+                    margin-top: 50px;
+                    width: 300px;
+                    margin-left: -10px;
+                    
+                }
+                .form{
+                    margin: auto;
+                    width:530px;
+                    padding-top: 20px;
+                    
+                    padding-left: 30px;
+                   
+                }
+                .input{
+                    width: 180px;
+                    height: 30px;
+                    background: transparent;
+                    border: 3px solid #fff;
+                    border-radius: 10px;                
+                   
+                }
+                .logo{
+                    width: 100px;
+                    height:100px ;
+                    filter: drop-shadow(2px 3px 4px black);
+                }
+                .logo_div{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .logo_subdiv{
+                    flex-direction: row;
+                    margin-left: 10px;
+                }
+                .video_div{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 20px;
+                }
+                .video_subdiv{
+                    flex-direction: row;
+                    margin-left: 20px;
+                    margin-top: 15px;
+                   
+                }
+                .personal_div{
+                    display:flex;
+                }
+                .personal_subdiv{
+                    flex-direction: row;
+                    padding: 3px;
+                    width: 340px;
+                    height:auto;
+                 
+                    
+                    
+                }
+                .formdiv{
+                    flex-direction: row;
+                    padding: 3px;
+                    width: 340px;
+                    height:auto;
+                    margin-left: -20px;
+                    margin-top: -2px;
+                    
+                }
+                personal_sub{
+                    flex-direction: row;
+                    padding: 3px;
+                    width: 360px;
+                    height:auto;
+              
+                }
+                .logo2{
+                    margin-top: 150px;
+                    width:250px;
+                    animation: log 1s ease-in infinite;
+                }
+              
+                .contact{
+                    
+                    flex-direction: row;
+                    padding: 3px;
+                    
+                    height:auto;
+                    margin-left: -20px;
+                    width: 250px;
+                    
+                }
+                .suggestion{
+                    flex-direction:row;
+                    width:500px;
+                    margin-top: 100px;
+                    
+                }
+                .youtube{
+                    width: 200px;
+                    height: 200px;
+                }
+                .educationimage{
+                    margin-top: -15px;
+                    width: 200px;
+                    height: 200px;
+                }
+                .contactme{
+                    width: 300px;
+                    height:500px;
+                    margin-left: -65px;
+            
+
+                }
+                .suggestionimage{
+                    width: 400px;
+                }
+
+            }
+
+
+
+        </style>
+    </head>
+    <body background="{%static 'image/c12.jpg'%}" >
+        <div class="maindiv">
+                <div class="title">
+               
+               
+                    <ul class="list">
+                      <li><a href="#personal">Personal</a></li>
+                        <li><a href="#Experience">Experience</a></li>
+                        <li><a href="#section3">Education</a></li>
+                        <li><a href="#section4">Keyskills</a></li>
+                        <li><a href="#section5">Contect_Me</a></li>
+                        <li><a href="#section6">Suggestions</a></li>
+                    
+                    </ul>
+               
+                </div>
+            <div class="detail">
+                <section class="section1" id="personal" style="border-bottom:3px solid black;">
+                    <div class="top1"><center>Personal Details</center></div><br><br>
+                    
+                     <div class="personal_div">
+                        <div class="personal_subdiv">   <p class="experience">
+                            Name : Aman Sharma <br><br>
+                            Father's Name : Mr.Arjun Sharma <br><br>
+                            Mother's Name : Mrs.Manju Devi <br><br>
+                            Email : amanpriince5618@gmail.com <br><br>
+                            Phone_No. : 7303335618 <br><br> 
+                            Age : 20
+                            <br><br>
+                            Date_of_birth : 03-01-2002
+                            <br><br>
+                        </p></div>
+                        <div class="contact">
+                            <img   src="{%static 'image/logo1.png'%}" alt="" class="logo2">
+                        </div>
+                     </div>
+                    </section>
+
+                <section class="section2" id="Experience" style="border-bottom:3px solid black;">
+                    <div class="top"><center>Experience</center></div>
+                  <div class="personal_div">
+                    <div class="expcontact"><img class="logo2" src="{%static 'image/logo2.png'%}" alt=""></div>
+                    <div class="personal_subdiv"> <p class="experience"> 1 March-30 June 
+                        Full-stack web developer• intern • Netcoreinfo <br><br>
+                         Collaborated with the development team to create and implement web 
+                        applications using Python and Django framework <br><br>
+                         Collaborated with designers effectively to access application requirements and 
+                        advice on technical solutions <br><br>
+                         Communicated clearly with wed development teams, ascertaining daily tasks 
+                        and completing to exact direction <br><br>
+                         Wrote and defined clean codes to achieve functional and sustainable web 
+                        applications <br><br></p></div>
+                    
+                  </div> 
+                </section>
+
+                <section style="border-bottom:3px solid black;" id="section3">
+                    <div class="top"><center>Education</center></div>
+                   
+                    <div class="personal_div">
+                        <div class="personal_subdiv">
+                            <p class="experience">Baba Banda Singh Bahadur Memorial Secondary School, New-Delhi <br> 
+                                 Completed 10th -71% <br><br>
+                                Guru Hark Ishan Public School,New-Delhi,Vasant Vihar <br> 
+                                 Completed 12th -72% (Commerce) <br><br>
+                                Guru Tegh Bahadur Polytechnic Institute <br> 
+                                 Diploma in computer Science Engineering <br><br>
+                                IGNOU <br>
+                                 PURSUING BCA <br><br></p>
+                        </div>
+                        <div class="personal_subdiv">
+                            <img class="logo2" src="{%static 'image/logo3.png'%}" alt="">
+                        </div>
+                    </div>
+                </section>
+
+                <section style="border-bottom:3px solid black;" id="section4">
+                    <div class="top"><center>Key Skills</center></div>
+                   
+
+                    <div class="personal_div">
+                        <div class="expcontact">
+                            <img class="logo2" src="{%static 'image/logo5.png'%}" alt="">
+                        </div>
+
+                        <div class="personal_subdiv">
+                            <p class="experience ">
+                                · Python Web Developer <br>
+                                · Web Application and  
+                                   Wed Designing <br>
+                                · Handling Pressure <br>
+                                · Problem Solving <br>
+                                · Html,Css & Intermediate 
+                                    JavaScript <br>
+                                · RestApi ( intermediate) <br>
+                                · Adaptability/Positive 
+                                    Attitude/Quick Learner <br>
+                                · Critical Thinking <br>
+                                · Bootstrap <br>
+                                <div class="logo_div">
+                                    <div class="logo_subdiv">
+                                        <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                                    </div>
+                                    <div >
+                                      
+                    <i class="devicon-django-plain-wordmark" style="font-size: 111px;margin-left:10px"></i>
+                  
+                                    </div>
+        
+                                    <div class="logo_subdiv">
+                                        <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+                                    </div>
+        
+                                    <div class="logo_subdiv">
+                                        
+                                      <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                  
+                                    </div>
+                                    <div class="logo_subdiv">
+                                        
+                                      <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                  
+                                    </div>
+        
+                                    <div class="logo_subdiv">
+                                        
+                                      <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+                  
+                                    </div>
+        
+                                    <div class="logo_subdiv">
+                                        <img class="logo" src="
+                                        {%static 'image/Django Rest.png'%}" alt="">
+                                    </div>
+                                </div>
+                               
+                  
+                            </p>
+                        </div>
+                       
+                    </div>
+                </section>
+
+                <section style="border-bottom:3px solid black;" id="section5">
+                    <div class="top"><center>Achievement</center></div>
+                   <div class="personal_div">
+                    <div class="personal_subdiv"> <p class="experience"> Updesco certificate(python & Django) 
+                    </p></div>
+                    <div><img src="{%static 'image/logo6.png'%}" alt="" class="educationimage"></div>
+                   </div>
+                </section>
+
+                <section style="border-bottom:3px solid black;" id="section5">
+                    <div class="top"><center>Contact me</center></div>
+                  
+
+                    <div class="personal_div">
+                        <div class="contactme"><img  src="{%static 'image/logo7.png'%}" alt=""></div>
+                        <div class="formdiv">
+                            <div class="form" >
+                                <form action="/" method="post" enctype="multipart/form-data" class="experience">
+                                    {%csrf_token%}
+                                    <label for="">FullName :</label>
+                                    <input type="text" name="name" class="input"><br><br>
+                                    <label >Email :</label>
+                                    <input type="email" name="email" class="input"><br><br>
+                                    <label >Phone-No :</label>
+                                    <input type="text" class="input" name="phone"><br><br>
+                                    <label >Query :</label>
+                                    <textarea class="input" name="query"  cols="30" rows="10"></textarea><br><br>
+                                    <center class="button"><button style="width:100px;height:30px;background-color:greenyellow;border-radius:20px" type="submit">Submit Query</button></center>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <section id="section6" style="border-bottom:3px solid black">
+                    <div class="top"><center>suggestion</center></div>
+                   
+
+
+                    <div class="personal_div">
+                         <div class="personal_subdiv"> 
+                            <div class="video_div">
+                                <div class="video_subdiv"><iframe class="youtube" src="https://www.youtube.com/embed/DNFTUtZf1Zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  style="border-radius:50px"></iframe></div>
+                                <div class="video_subdiv">
+                                <iframe 
+                                class="youtube" src="https://www.youtube.com/embed/JxzZxdht-XY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  style="border-radius:50px"></iframe>
+                                </div>
+                                <div class="video_subdiv">
+                                <iframe class="youtube" src="https://www.youtube.com/embed/YfO28Ihehbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:50px"></iframe>
+                                </div>
+    
+                                <div class="video_subdiv">
+                                <iframe class="youtube" src="https://www.youtube.com/embed/BsDoLVMnmZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:50px"></iframe>
+                                </div>
+
+                                <div class="video_subdiv">
+                                <iframe class="youtube" src="https://www.youtube.com/embed/vpAJ0s5S2t0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:50px"></iframe>
+                               </div>
+                               <div class="video_subdiv">
+                                <iframe class="youtube" src="https://www.youtube.com/embed/HcOc7P5BMi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:50px"></iframe>
+                               </div>
+                            </div>
+                        </div>
+                  
+
+                        <div class="suggestion">
+                            <img src="{%static 'image/logo8.png'%}" alt="" class="suggestionimage">
+                        </div>
+                    </div>
+                </section>
+
+                <section style="border-bottom:3px solid #f7f3f3;">
+                    <div class="last"><center>More About My Internship</center></div>
+                    <div>
+                        <p >
+                            <li class="last_head">Technical Course in
+                                PYTHON and  DJANGO
+                                At NITD NOIDA
+                                </li><br><br>
+                            <li class="last_head">Complete Technical Training In PYTHON and DJANGO Under The UPDESCO</li><br><br>
+                            <li class="last_head">Comlete Intership As Full Stack Developer At NETCOREINFO</li><br><br>
+                            <div><center class="top">Feedback</center></div>
+                            <li class="last_head">They Provide Best Developer For Our Tranintg</li><br>
+                            <li class="last_head">Their Developer is Very Friendly & Helpfull.</li><br>
+                            <li class="last_head">I am Happy with this Feedbacks.</li><br>
+                            <li class="last_head">They are very helpful for my learning.</li><br>
+                            <li class="last_head">My Learning was much more easier after the internship.</li><br>
+                            <li class="last_head">It's a good opportunity to learn new things from them.</li><br>
+                            <li class="last_head">Thanks, I will surely recommend this company again!!!</li><br>
+
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+{%load static%}
+<html>
+
+    <head>
+        <style>
+            .thead{
+                border: 3px solid rgb(245, 242, 242);
+                padding: 30px;
+               
+                font-size: 30px;
+                font-weight: bolder;
+                text-align: center;
+                border-radius: 20px;
+                color: aliceblue;
+
+            }
+            .query{
+                border: 3px solid rgb(245, 240, 240);
+                padding :20px ;
+                font-size: 30px;
+                font-weight: bolder;
+                text-align: center;
+                margin: 10px;
+                border-radius: 30px;
+                width: 200px;
+                overflow: auto;
+                color:aliceblue;
+            }
+           
+           
+            .td{
+                border: 3px solid rgb(245, 240, 240);
+                padding :20px ;
+                font-size: 30px;
+                font-weight: bolder;
+                text-align: center;
+                margin: 10px;
+                border-radius: 30px;
+                color: aliceblue;
+            }
+            .maindiv{
+                display: flex;
+            
+                width: 1000px;             
+               
+            }
+            .subdiv{
+                flex-direction: row;
+                width: auto;
+               
+                           
+               
+            }
+            .subdiv1{
+                flex-direction: row;
+                width: 300px;           
+                
+            }
+            .visiter{
+                font-size: 50px;
+                font-weight: bolder;
+                font-family: cursive;
+                color: aliceblue;
+            }
+            .button{
+                font-size: 20px;
+                font-weight: bolder;
+                font-family: cursive;
+                background-color: orange;
+                border-radius: 15px;
+            
+            }
+            tr:nth-child(even){
+                background-color:grey;
+                opacity: 0.5;
+            }
+        </style>
+
+    </head>
+    <body background="{%static 'image/c8.jpg'%}">
+        <div>
+            <center class="visiter">-------Visiter-------</center>
+        </div>
+     <div class="maindiv">
+        <div class="subdiv1"><img src="{%static 'image/logo9.png'%}" alt=""></div>
+            <div class="subdiv">
+                <table>
+                    <thead class="thead">
+                        <td class="td">Name</td>
+                        <td class="td">Email</td>
+                        <td class="td">Phone-No</td>
+                        <td class="query">Query</td>
+                        <td class="td">Date</td>
+
+                    </thead>
+                <tbody>
+                    {%for i in data%}
+                    <tr >
+                    <td class="td">{{i.name}}</td>
+                    <td class="td">{{i.email}}</td>
+                    <td class="td">{{i.phone}}</td>
+                    <td class="query">{{i.query}}</td>
+                    <td class="td">{{i.date|timesince}}</td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+        </div>
+     </div>
+      <div><center ><a href="/"><button class="button"><-- Go Back</button></a></center></div>
+    </body>
+
+</html>
